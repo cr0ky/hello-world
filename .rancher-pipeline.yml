@@ -2,7 +2,8 @@ stages:
 - name: compile
   steps:
   - publishImageConfig:
-      dockerfilePath: ./Dockerfile
+      dockerfilePath: ./package/Dockerfile
       buildContext: .
       tag: cr0kyhelloworld
+      registry: 127.0.0.1:34111
 timeout: 60
